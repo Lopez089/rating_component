@@ -2,6 +2,7 @@ const $form = document.querySelector('form');
 const $items = document.querySelectorAll('input[type=radio]')
 const $submit = document.querySelector('button[type=submit]')
 const $card = document.querySelector('.card')
+const $error = document.querySelector('.error')
 const cardTanks = (value) => {
     return `  <section class='card-content'> 
                 <img src='/static/illustration-thank-you.svg' alt='thank-you'> 
@@ -22,7 +23,16 @@ $items.forEach(item => {
 
 const submit = (e) => {
     e.preventDefault()
-    $card.innerHTML = cardTanks(valueUser)
+    if (valueUser) {
+        $card.innerHTML = cardTanks(valueUser)
+    } else {
+        $error.innerHTML = 'Please select a value. Thank you.'
+
+        setTimeout(() => {
+            $error.innerHTML = ''
+        }, 4000)
+    }
+
 
 }
 

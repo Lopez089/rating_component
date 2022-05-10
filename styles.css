@@ -254,6 +254,9 @@ input[type="radio"]:hover+label {
     align-items: center;
 }
 
+.error {
+    color: var(--orange-color);
+}
 
 .icon-star {
     background: var(--medium-dark-blue);
