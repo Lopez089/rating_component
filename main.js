@@ -5,7 +5,7 @@ const $card = document.querySelector('.card')
 const $error = document.querySelector('.error')
 const cardTanks = (value) => {
     return `  <section class='card-content'> 
-                <img src='/static/illustration-thank-you.svg' alt='thank-you'> 
+                <img src='static/illustration-thank-you.svg' alt='thank-you'> 
                     <div class='tab-selectied'> 
                         <p> You selectied ${value} out of 5</p> 
                     </div > 
