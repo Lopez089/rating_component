@@ -175,9 +175,9 @@ body {
 
 p {
     margin-bottom: var(--mb-2);
-    line-height: 1.7rem;
+    line-height: 1.4rem;
     letter-spacing: 0px;
-    word-spacing: 4px;
+    word-spacing: 1px;
 }
 
 form {
@@ -277,7 +277,7 @@ input[type="radio"]:hover+label {
 .tab-selectied {
     margin-top: var(--mb-2-5);
     background: var(--medium-dark-blue);
-    padding: .5rem 1rem;
+    padding: .6rem 1.5rem .4rem 1.5rem;
     border-radius: 2rem;
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
