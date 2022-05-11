@@ -240,7 +240,7 @@ input[type="radio"]:hover+label {
 .card {
     background: var(--dark-blue);
     padding: 2rem;
-    max-width: 30%;
+    max-width: 18%;
     border-radius: 2rem;
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
@@ -288,4 +288,82 @@ input[type="radio"]:hover+label {
 .tab-selectied>p {
     color: var(--orange-color);
     margin: 0;
+}
+
+/*======================= MOBILE =================*/
+@media (max-width: 1440px) {
+
+    .card {
+        max-width: 30%;
+    }
+
+
+}
+
+@media (max-width: 1024px) {
+
+    .card {
+        max-width: 40%;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    .card {
+        max-width: 50%;
+    }
+
+
+}
+
+@media (max-width: 425px) {
+
+    .card {
+        max-width: 90%;
+    }
+
+
+}
+
+@media (max-width: 375px) {
+
+    .card {
+        max-width: 90%;
+    }
+
+    label {
+        padding: 15px 19px;
+        font-size: 12px;
+        border-radius: 15rem;
+        -webkit-border-radius: 15rem;
+        -moz-border-radius: 15rem;
+        -ms-border-radius: 15rem;
+        -o-border-radius: 15rem;
+    }
+
+    button {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .card {
+        max-width: 90%;
+    }
+
+    label {
+        padding: 11px 15px;
+        font-size: 12px;
+        border-radius: 15rem;
+        -webkit-border-radius: 15rem;
+        -moz-border-radius: 15rem;
+        -ms-border-radius: 15rem;
+        -o-border-radius: 15rem;
+    }
+
+    button {
+        font-size: 12px;
+    }
 }
